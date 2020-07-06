@@ -1,0 +1,11 @@
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+.navbar-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
