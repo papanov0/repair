@@ -1,5 +1,6 @@
 .hero
     padding: 50px 0
+    background-color: $secondary
     &-block
         display: flex;
     &-text
@@ -55,13 +56,17 @@
             &__subtitle
                 font-size: 16px
                 margin-bottom: 28px
-
+                &:last-child
+                    margin-bottom: 0
         &-list
             &__text
                 font-size: 12px
                 max-width: 210px
             &__item
-                margin-bottom: 20px
+                display: flex
+                align-items: center
+                margin-bottom: 25px
+
             &__image
                 margin-right: 15px
 
