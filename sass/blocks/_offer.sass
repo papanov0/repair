@@ -26,11 +26,21 @@
     &__input
         margin-bottom: 14px
         width: 240px
+        &:focus
+            outline: none;
+            box-shadow: 0 0 0 3px $main-color
         &:first-child
             margin-right: 10px
     &__button
         width: 100%
         min-height: 70px
+    &__info
+        display: flex
+        justify-content: space-between
+        align-items: left
+        margin-top: 30px
+    &__manager
+        margin-right: 70px
 @media  ( max-width: 1200px )
     .offer
         background-size: cover
