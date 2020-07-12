@@ -323,9 +323,26 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
+  display: none;
+}
+
+.modal_active {
+  display: flex;
 }
 
 .modal-dialog {
+  position: relative;
   margin: auto;
+  max-width: 450px;
+  width: 90%;
+  min-height: 200px;
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+.modal-dialog__clouse {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */
