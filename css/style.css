@@ -43,6 +43,10 @@ img {
     max-width: 580px;
     width: 90%;
   }
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .button {
@@ -84,6 +88,14 @@ img {
 
 .arrows__left:hover, .arrows__right:hover {
   cursor: pointer;
+}
+
+input.invalid {
+  border: 1px solid #DF0101;
+}
+
+div.invalid {
+  columns: #000000;
 }
 
 .navbar {
@@ -320,6 +332,15 @@ img {
     width: 100%;
     padding-right: 0;
   }
+  .navbar__phone {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar__phone {
+    font-size: 10px;
+  }
 }
 
 .modal {
@@ -483,5 +504,211 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.brif {
+  background-image: url("../../img/orange.jpg"), url("../../img/brif-bg.jpg");
+  background-position: left center, center right;
+  background-size: 50%, contain;
+  background-repeat: repeat-y, no-repeat;
+}
+
+.brif-block {
+  display: flex;
+}
+
+.brif__interview {
+  flex-basis: 50%;
+}
+
+.brif__form {
+  flex-basis: 50%;
+  padding-left: 200px;
+  text-align: center;
+}
+
+.brif__input {
+  width: 100%;
+  max-width: 370px;
+  margin-bottom: 15px;
+}
+
+.brif__button {
+  height: 70px;
+  width: 100%;
+  max-width: 370px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.interview {
+  padding-right: 70px;
+}
+
+.interview__title {
+  max-width: 550px;
+  margin-bottom: 50px;
+  font-size: 22px;
+  font-family: 'museo sans bold', sans-serif;
+  font-weight: 700;
+}
+
+.interview__subtitle {
+  display: block;
+  margin-bottom: 90px;
+  font-size: 16px;
+}
+
+.interview-list {
+  list-style: none;
+  padding: 0;
+}
+
+.interview-list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  font-family: 'museo sans bold', sans-serif;
+  font-weight: 700;
+}
+
+.interview-list__counter {
+  display: inline-block;
+  margin-right: 30px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 14px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #333333;
+  border-radius: 50%;
+}
+
+.interview-list__text {
+  max-width: 400px;
+}
+
+.form__title {
+  max-width: 550px;
+  margin-bottom: 50px;
+  font-size: 22px;
+}
+
+.form__subtitle {
+  display: block;
+  margin-bottom: 90px;
+  font-size: 16px;
+}
+
+.form__description {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .brif__form {
+    padding-left: 30px;
+  }
+  .interview {
+    padding-right: 30px;
+  }
+  .interview__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .interview__subtitle {
+    margin-bottom: 30px;
+  }
+  .interview-list__text {
+    font-size: 14px;
+    max-width: 300px;
+  }
+  .interview-list__counter {
+    margin-right: 20px;
+  }
+  .form__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .form__subtitle {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brif {
+    background-image: url("../../img/orange.jpg"), url("../../img/brif-bg.jpg");
+    background-position: top center, center bottom;
+    background-size: 100% 50%, cover;
+    background-repeat: repeat-x, no-repeat;
+  }
+  .brif-block {
+    flex-direction: column;
+  }
+  .brif__form {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 400px) {
+  .brif__form {
+    margin-top: 70px;
+  }
+  .interview-list__text {
+    font-size: 12px;
+    max-width: 220px;
+  }
+}
+
+.footer {
+  position: relative;
+}
+
+.map {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.contacts {
+  flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+
+.contacts__title {
+  font-family: 'museo sans bold', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.contacts-block {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contacts-list {
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  line-height: 20px;
+  margin-right: 23px;
+}
+
+.contacts-list__item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 39px;
+}
+
+.strong {
+  font-family: 'museo sans bold', sans-serif;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
